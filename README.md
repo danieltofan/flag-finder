@@ -2,7 +2,7 @@
 
 An interactive flag and country exploration app built with Vue 3 and Tailwind CSS. Discover flags from around the world, compare countries, and test your knowledge with fun quizzes.
 
-**Live Demo:** [FlagFinder](https://danieltofan.github.io/countries/)
+**Live Demo:** [FlagFinder](https://danieltofan.github.io/flag-finder/)
 
 ## Features
 
@@ -104,7 +104,7 @@ The app is configured for GitHub Pages deployment:
 npm run build
 ```
 
-Output is in the `dist/` directory, configured with base path `/countries/`.
+Output is in the `dist/` directory, configured with base path `/flag-finder/`.
 
 ## License
 

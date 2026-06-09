@@ -31,7 +31,9 @@ describe('Router', () => {
     expect(route.props).toBeDefined()
   })
 
-  it('uses correct base path for GitHub Pages', () => {
-    expect(router.options.history.base).toBe('/countries-vue')
+  it('uses the Vite base path for GitHub Pages', () => {
+    // Router base derives from vite `base` (import.meta.env.BASE_URL) so a repo
+    // rename only needs the one config change. history.base drops the trailing slash.
+    expect(router.options.history.base).toBe(import.meta.env.BASE_URL.replace(/\/+$/, ''))
   })
 })
